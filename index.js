@@ -10,3 +10,7 @@ const port = parseInt(process.env.PORT) || 8080;
 app.listen(port, () => {
   console.log(`helloworld: listening on port ${port}`);
 });
+
+setInterval(() => {
+  console.log(new Date(), ' PING')
+}, 5000);
